@@ -19,6 +19,7 @@ docroot/sites/*/private
 # Ignore contrib modules. These should be created during build process.
 docroot/modules/contrib
 docroot/themes/contrib
+docroot/themes/custom/stanford_basic
 docroot/profiles/contrib
 docroot/libraries
 drush/Commands
