@@ -5,7 +5,7 @@ recipe: drupal8
 #     - solr.se3blt.sws:8983
 config:
   webroot: docroot
-  xdebug: true
+  # xdebug: true
   php: '7.2'
   drush: composer
 services:
