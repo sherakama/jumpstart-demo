@@ -1,4 +1,4 @@
-name: jumpstart-demo
+name: jumpstartdemo
 recipe: drupal8
 # proxy:
 #   solr:

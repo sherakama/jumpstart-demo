@@ -16,11 +16,12 @@
         "consolidation/robo": "~1.2.4",
         "cweagans/composer-patches": "^1.6",
         "davidbarratt/custom-installer": "~1.0",
-
         "drupal/admin_toolbar": "~1.18",
         "drupal/components": "~1.1-alpha1",
+        "drupal/ds": "^3.1",
+        "drupal/field_group": "^1.0",
+        "drupal/paragraphs": "^1.5",
         "drupal/ui_patterns": "~1.0",
-
         "su-sws/stanford_basic": "dev-8.x-4.x"
     },
     "require-dev": {},
