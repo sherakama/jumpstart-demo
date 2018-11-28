@@ -1,0 +1,22 @@
+uuid: e960ba88-883d-48a0-8438-1af0dcff7b48
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card
+    - field.field.block_content.card.body
+  module:
+    - text
+id: block_content.card.default
+targetEntityType: block_content
+bundle: card
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

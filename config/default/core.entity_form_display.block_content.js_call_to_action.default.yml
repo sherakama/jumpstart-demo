@@ -1,0 +1,42 @@
+uuid: 58820ee3-24c7-4123-b945-af05889289c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.js_call_to_action
+    - field.field.block_content.js_call_to_action.field_b_button
+    - field.field.block_content.js_call_to_action.field_image
+    - image.style.thumbnail
+  module:
+    - image
+    - link
+id: block_content.js_call_to_action.default
+targetEntityType: block_content
+bundle: js_call_to_action
+mode: default
+content:
+  field_b_button:
+    weight: 29
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_image:
+    weight: 28
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

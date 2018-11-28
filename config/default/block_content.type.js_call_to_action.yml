@@ -1,0 +1,8 @@
+uuid: 62111016-b06b-495d-9fc9-33dd9ee9c31d
+langcode: en
+status: true
+dependencies: {  }
+id: js_call_to_action
+label: 'Call to Action'
+revision: 1
+description: 'Call to action component with clickable image and button.'

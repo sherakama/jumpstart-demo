@@ -1,0 +1,10 @@
+id: cta_block
+label: 'CTA Block'
+ui_limit: ''
+properties:
+  block: 'block_content:af7878f0-3962-4f5c-9ad5-54e3b98a83c6'
+  use_block_title: false
+type: block
+type_label: 'Block field'
+entities:
+  node: node

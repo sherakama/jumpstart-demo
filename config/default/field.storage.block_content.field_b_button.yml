@@ -1,0 +1,19 @@
+uuid: 2aa86e14-4f20-4cdc-9b09-501b94a70646
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - link
+id: block_content.field_b_button
+field_name: field_b_button
+entity_type: block_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

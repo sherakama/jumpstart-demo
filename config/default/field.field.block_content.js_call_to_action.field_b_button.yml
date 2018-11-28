@@ -1,0 +1,23 @@
+uuid: fa470c39-b151-4057-8a0b-9b9b807209f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.js_call_to_action
+    - field.storage.block_content.field_b_button
+  module:
+    - link
+id: block_content.js_call_to_action.field_b_button
+field_name: field_b_button
+entity_type: block_content
+bundle: js_call_to_action
+label: Button
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

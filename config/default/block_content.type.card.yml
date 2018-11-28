@@ -1,0 +1,8 @@
+uuid: 37835252-3c4b-4b19-81d4-2b4f792c011e
+langcode: en
+status: true
+dependencies: {  }
+id: card
+label: Card
+revision: 1
+description: 'One of the primary building block components. This card component comes with several fields to ensure flexibility.'

@@ -1,0 +1,52 @@
+uuid: 3e68820a-6a11-43ae-b2a2-1cc2032d2bff
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.field.block_content.basic.body
+  module:
+    - ds
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_hero
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes: {  }
+        wrappers:
+          hero_image: div
+          hero_media: div
+          hero_super_headline: div
+          hero_headline: div
+          hero_body: div
+          hero_cta_link: div
+          hero_cta_attributes: div
+          hero_cta_label: div
+          hero_button_link: div
+          hero_button_label: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      hero_image:
+        - body
+_core:
+  default_config_hash: orJpHUlAc_wiQLMUjIgEJXGeiqylGHMPcmNRjGtct-M
+id: block_content.basic.default
+targetEntityType: block_content
+bundle: basic
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

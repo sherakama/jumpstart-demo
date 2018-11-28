@@ -22,6 +22,7 @@
         "drupal/field_group": "^1.0",
         "drupal/paragraphs": "^1.5",
         "drupal/ui_patterns": "~1.0",
+        "drupal/token": "~1.5",
         "su-sws/stanford_basic": "dev-8.x-4.x"
     },
     "require-dev": {},

@@ -1,0 +1,22 @@
+uuid: f86072da-c15e-4e1b-826e-64bb6ccabbf8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - stanford_basic
+_core:
+  default_config_hash: L8SwN4cl6P0j9hYYd7JaHkA7IeF6oC9BCRfI66E7Bz0
+id: stanford_basic_messages
+theme: stanford_basic
+region: help
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

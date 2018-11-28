@@ -1,0 +1,22 @@
+uuid: 7cabe489-3007-4a5f-be7c-b0c654ad9a5f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - stanford_basic
+_core:
+  default_config_hash: iBSQxLZp6g8gp9HB_Y8Od9GA77DE6KBY5s8rNke3XWM
+id: stanford_basic_local_tasks
+theme: stanford_basic
+region: help
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

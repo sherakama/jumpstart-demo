@@ -1,0 +1,63 @@
+uuid: 312e7293-2b42-4943-9a65-9513b2d1ef2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.js_call_to_action
+    - field.field.block_content.js_call_to_action.field_b_button
+    - field.field.block_content.js_call_to_action.field_image
+    - image.style.large
+  module:
+    - ds
+    - image
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_cta
+      library: null
+      disable_css: false
+      entity_classes: no_classes
+      settings:
+        pattern:
+          field_templates: only_content
+          variant: center
+    regions:
+      image_src:
+        - field_image
+      image_alt:
+        - 'dynamic_token_field:block_content-ds_block_image_alt_text'
+      button_text:
+        - 'dynamic_token_field:block_content-button_text'
+      link:
+        - 'dynamic_token_field:block_content-button_link'
+    fields:
+      'dynamic_token_field:block_content-button_link':
+        plugin_id: 'dynamic_token_field:block_content-button_link'
+        weight: 3
+        label: hidden
+        formatter: default
+      'dynamic_token_field:block_content-button_text':
+        plugin_id: 'dynamic_token_field:block_content-button_text'
+        weight: 2
+        label: hidden
+        formatter: default
+      'dynamic_token_field:block_content-ds_block_image_alt_text':
+        plugin_id: 'dynamic_token_field:block_content-ds_block_image_alt_text'
+        weight: 1
+        label: hidden
+        formatter: default
+id: block_content.js_call_to_action.default
+targetEntityType: block_content
+bundle: js_call_to_action
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+    third_party_settings: {  }
+    type: image_url
+    region: image_src
+hidden:
+  field_b_button: true

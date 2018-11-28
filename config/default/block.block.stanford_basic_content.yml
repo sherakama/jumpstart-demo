@@ -1,0 +1,22 @@
+uuid: 984f1586-3a34-403d-9bd5-b363bdb6fe0f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - stanford_basic
+_core:
+  default_config_hash: m7dG2ekajv-DPjn2EX937xhF2alv_cM_LziKKYcY3F8
+id: stanford_basic_content
+theme: stanford_basic
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
