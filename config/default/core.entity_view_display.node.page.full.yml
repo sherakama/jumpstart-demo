@@ -1,52 +1,41 @@
 uuid: 6f205e9a-4573-4f86-90ad-204f6e554b2d
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.page.body
+    - field.field.node.page.layout_builder__layout
     - node.type.page
   module:
-    - ds
+    - layout_builder
+    - layout_discovery
     - text
     - user
 third_party_settings:
-  ds:
-    layout:
-      id: layout_pacman-left
-      library: null
-      disable_css: false
-      entity_classes: all_classes
-      settings: {  }
-    regions:
-      header:
-        - node_title
-      first:
-        - 'dynamic_block_field:node-cta_block'
-      second:
-        - body
-      footer:
-        - node_changed_date
-    fields:
-      'dynamic_block_field:node-cta_block':
-        plugin_id: 'dynamic_block_field:node-cta_block'
-        weight: 1
-        label: hidden
-        formatter: default
-      node_changed_date:
-        plugin_id: node_changed_date
-        weight: 3
-        label: inline
-        formatter: ds_post_date_long
-      node_title:
-        plugin_id: node_title
-        weight: 0
-        label: hidden
-        formatter: default
-        settings:
-          wrapper: h1
-          class: ''
-          link: false
+  layout_builder:
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          0659c8ea-e9b9-429d-8e3f-3cc6aa746675:
+            uuid: 0659c8ea-e9b9-429d-8e3f-3cc6aa746675
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:page:body'
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+    allow_custom: false
+    enabled: true
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
 id: node.page.full
@@ -56,10 +45,11 @@ mode: full
 content:
   body:
     type: text_default
-    weight: 2
-    region: second
+    weight: 1
+    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
 hidden:
+  layout_builder__layout: true
   links: true

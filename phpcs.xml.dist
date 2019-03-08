@@ -35,4 +35,11 @@
   <exclude-pattern>*/node_modules</exclude-pattern>
   <exclude-pattern>*/vendor</exclude-pattern>
 
+  <rule ref="Drupal.Array.Array">
+    <!-- Sniff for these errors: ArrayClosingIndentation -->
+    <exclude name="Drupal.Array.Array.CommaLastItem" />
+    <exclude name="Drupal.Array.Array.ArrayIndentation" />
+    <exclude name="Drupal.Array.Array.LongLineDeclaration" />
+  </rule>
+
 </ruleset>

@@ -4,74 +4,57 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.layout_builder__layout
     - node.type.page
+  content:
+    - 'block_content:card:7def8dd5-0d48-45ca-a780-b486711c2053'
   module:
-    - ds
-    - text
+    - block_content
+    - layout_builder
+    - system
     - user
 third_party_settings:
-  ds:
-    layout:
-      id: layout_ibeam
-      library: null
-      disable_css: false
-      entity_classes: all_classes
-      settings: {  }
-    regions:
-      hero:
-        - node_title
-        - body
-      first:
-        - links
-      full:
-        - user
-        - node_submitted_by
-      second:
-        - node_author
-        - node_post_date
-    fields:
-      user:
-        plugin_id: user
-        weight: 3
-        label: hidden
-        formatter: default
-      node_post_date:
-        plugin_id: node_post_date
-        weight: 6
-        label: hidden
-        formatter: ds_post_date_long
-      node_author:
-        plugin_id: node_author
-        weight: 5
-        label: hidden
-        formatter: author
-      node_submitted_by:
-        plugin_id: node_submitted_by
-        weight: 4
-        label: hidden
-        formatter: ds_post_date_long
-      node_title:
-        plugin_id: node_title
-        weight: 0
-        label: hidden
-        formatter: default
+  layout_builder:
+    sections:
+      -
+        layout_id: layout_pacman-left
+        layout_settings: {  }
+        components:
+          1c0d78bf-8851-467d-833f-6c98de7307da:
+            uuid: 1c0d78bf-8851-467d-833f-6c98de7307da
+            region: header
+            configuration:
+              id: page_title_block
+              label: 'Page title'
+              provider: core
+              label_display: '0'
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+          d02df1fe-bb08-4d6f-ab9b-99a53d278287:
+            uuid: d02df1fe-bb08-4d6f-ab9b-99a53d278287
+            region: sidebar
+            configuration:
+              id: 'block_content:7def8dd5-0d48-45ca-a780-b486711c2053'
+              label: 'Welcome Card'
+              provider: block_content
+              label_display: visible
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+    allow_custom: true
+    enabled: true
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
 id: node.page.default
 targetEntityType: node
 bundle: page
 mode: default
-content:
-  body:
-    type: text_default
-    weight: 1
-    region: hero
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-  links:
-    weight: 2
-    region: first
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+content: {  }
+hidden:
+  body: true
+  layout_builder__layout: true
+  links: true
